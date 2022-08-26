@@ -525,10 +525,10 @@ RectTransform:
   m_Father: {fileID: 292684380}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -507.4, y: -164.2}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 91, y: 26}
+  m_SizeDelta: {x: 161, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &573823863
 MonoBehaviour:
@@ -1302,10 +1302,10 @@ RectTransform:
   m_Father: {fileID: 292684380}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -507.4, y: -201.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 91, y: 62.4}
+  m_SizeDelta: {x: 161, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365492683
 MonoBehaviour:
@@ -1492,8 +1492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac26d345f01cd455baf52d59d7fc1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sampleFrequency: 1
-  functionFrequency: 0
   inputFunctionFrequency: {fileID: 1365492683}
   inputSampleFrequency: {fileID: 573823863}
 --- !u!108 &1400345495
