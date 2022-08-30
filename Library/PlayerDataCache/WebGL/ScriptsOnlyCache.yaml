@@ -11,8 +11,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -91,33 +89,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1588}
     - Class: 114
-      Script: {instanceID: 1690}
+      Script: {instanceID: 1716}
     - Class: 114
-      Script: {instanceID: 2184}
+      Script: {instanceID: 2210}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2844}
+      Script: {instanceID: 2870}
     - Class: 114
-      Script: {instanceID: 4198}
+      Script: {instanceID: 4224}
     - Class: 114
-      Script: {instanceID: 4212}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 4508}
     - Class: 114
-      Script: {instanceID: 5032}
+      Script: {instanceID: 5058}
     - Class: 114
-      Script: {instanceID: 5248}
+      Script: {instanceID: 5274}
     - Class: 114
-      Script: {instanceID: 5862}
+      Script: {instanceID: 5820}
     - Class: 114
-      Script: {instanceID: 6014}
+      Script: {instanceID: 5890}
     - Class: 114
-      Script: {instanceID: 6358}
+      Script: {instanceID: 6042}
     - Class: 114
-      Script: {instanceID: 23144}
+      Script: {instanceID: 6386}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -663,6 +661,12 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: b9f60abcabbad23e0f28b10e77858a00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FanController
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -913,12 +917,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 90028305cf0007ffc01157cc9af2e668
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FanController
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

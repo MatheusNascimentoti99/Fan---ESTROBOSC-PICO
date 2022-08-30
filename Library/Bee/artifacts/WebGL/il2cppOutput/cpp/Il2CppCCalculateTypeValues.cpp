@@ -1954,8 +1954,6 @@ struct LayoutGroup_t32417833C700E77EDFA7C20034DAFD26604E05CE;
 struct Lease_t9280F47EBDF4FF4D3E61A87536BE43AFEA6A164C;
 // System.Runtime.Remoting.Lifetime.LeaseManager
 struct LeaseManager_tEE6B78A085475F3EB41B5E0F0C40051E03100252;
-// UnityEngine.Light
-struct Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3;
 // System.Collections.ListDictionaryInternal
 struct ListDictionaryInternal_tC5022F2C249477F5A90382A5A71661745C723123;
 // UnityEngine.UIElements.ListView
@@ -45271,8 +45269,14 @@ struct FanController_t65AB708135DD322154511C4636B441CCA2BBA99A  : public MonoBeh
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___inputFunctionFrequency_8;
 	// TMPro.TMP_InputField FanController::inputSampleFrequency
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___inputSampleFrequency_9;
-	// UnityEngine.Light FanController::lightComponent
-	Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___lightComponent_10;
+	// UnityEngine.GameObject FanController::fan
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___fan_10;
+	// System.Boolean FanController::isOriginalFan
+	bool ___isOriginalFan_11;
+	// UnityEngine.GameObject FanController::originalFan
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___originalFan_12;
+	// System.Int32 FanController::frameRate
+	int32_t ___frameRate_13;
 };
 
 // UnityEngine.UIElements.Label

@@ -11,32 +11,41 @@ public class FanController : MonoBehaviour
     private float functionFrequency;
     public TMP_InputField inputFunctionFrequency;
     public TMP_InputField inputSampleFrequency;
-    private Light lightComponent;
+    public GameObject fan;
+    public bool isOriginalFan=false;
+    public GameObject originalFan;
+    public int frameRate=60;
     // Start is called before the first frame update
     void Start()
     {
-        lightComponent  = gameObject.GetComponent<Light>();
+        
+    }
+
+    private void Awake() {
+        Time.fixedDeltaTime = 1f / frameRate;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
         functionFrequency = convertInputTextToFloat(inputFunctionFrequency.text);
-        nextActionFunctionTime += Time.deltaTime;
-        if (nextActionFunctionTime >= 1/functionFrequency ) {
-            Debug.Log(Time.time.ToString());
-            nextActionFunctionTime = 0.0f;
-            // execute block of code here
+        if(isOriginalFan){
+            nextActionFunctionTime += Time.fixedDeltaTime;
+            if (nextActionFunctionTime >= 1/functionFrequency ) {
+                Debug.Log(Time.time.ToString());
+                nextActionFunctionTime = 0.0f;
+                // execute block of code here
+            }
+                transform.Rotate(functionFrequency*transform.forward, -360 * Time.fixedDeltaTime * functionFrequency);
         }
-        transform.Rotate(functionFrequency*transform.forward, 360 * Time.deltaTime * functionFrequency);
         
-        sampleFrequency =   convertInputTextToFloat(inputSampleFrequency.text);
-        nextSampleTime += Time.deltaTime;
-        if (nextSampleTime >= 1/sampleFrequency ) {
-            lightComponent.enabled = !lightComponent.enabled;
+        sampleFrequency = convertInputTextToFloat(inputSampleFrequency.text);
+        if (nextSampleTime >= 1/sampleFrequency && isOriginalFan==false) {
+            fan.transform.rotation = originalFan.transform.rotation;
             nextSampleTime = 0.0f;
         }
+        nextSampleTime += Time.fixedDeltaTime;
     }
 
     private static float convertInputTextToFloat(string input){

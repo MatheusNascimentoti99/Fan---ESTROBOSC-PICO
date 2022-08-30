@@ -266,8 +266,6 @@ struct Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F;
 struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D;
 // System.Collections.IDictionary
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
-// UnityEngine.Light
-struct Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3;
 // UnityEngine.Yoga.Logger
 struct Logger_t092B1218ED93DD47180692D5761559B2054234A0;
 // System.Text.RegularExpressions.Match
@@ -5643,8 +5641,14 @@ struct FanController_t65AB708135DD322154511C4636B441CCA2BBA99A  : public MonoBeh
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___inputFunctionFrequency_8;
 	// TMPro.TMP_InputField FanController::inputSampleFrequency
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___inputSampleFrequency_9;
-	// UnityEngine.Light FanController::lightComponent
-	Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___lightComponent_10;
+	// UnityEngine.GameObject FanController::fan
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___fan_10;
+	// System.Boolean FanController::isOriginalFan
+	bool ___isOriginalFan_11;
+	// UnityEngine.GameObject FanController::originalFan
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___originalFan_12;
+	// System.Int32 FanController::frameRate
+	int32_t ___frameRate_13;
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -6458,6 +6462,6 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3397[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3402[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3410[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3410[10] = 
 {
-	static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___nextActionFunctionTime_4)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___nextSampleTime_5)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___sampleFrequency_6)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___functionFrequency_7)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___inputFunctionFrequency_8)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___inputSampleFrequency_9)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___lightComponent_10)),};
+	static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___nextActionFunctionTime_4)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___nextSampleTime_5)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___sampleFrequency_6)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___functionFrequency_7)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___inputFunctionFrequency_8)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___inputSampleFrequency_9)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___fan_10)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___isOriginalFan_11)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___originalFan_12)),static_cast<int32_t>(offsetof(FanController_t65AB708135DD322154511C4636B441CCA2BBA99A, ___frameRate_13)),};
